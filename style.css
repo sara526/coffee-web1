@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Miniver&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Miniver", cursive;
+}
+:root{
+    /* colors */
+    --white-color: #fff;
+    --dark-color: #252525;
+    --primary-color: #3b141c;
+    --secondary-color: #f3961c;
+    --light-pink-color: #faf4f5;
+    --meduim-gray-color: #ccc;
+
+    /* Font size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* Font weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Border radius */
+    --border-raduis-s: 8px;
+    --border-raduis-m: 30px;
+    --border-raduis-circle: 50%;
+
+    /* site max width */
+    --site-max-width: 1300px;
+}
+
+/* styling for whole page */
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    background-color: none;
+    border: none;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+}
+.section-content{
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* navbar style */
+header{
+    background: var(--primary-color);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between; /*width*/
+    align-items: center; /*height*/
+    padding: 20px;
+}
+.navbar .text-logo{
+    color: var(--white-color);
+    font-weight: var(--font-weight-semibold);
+}
+.nav-menu{
+    display: flex;
+    gap: 10px;
+}
+.navbar .nav-menu .nav-link{
+    color: var(--white-color);
+    padding: 10px 18px;
+    border-radius: var(--border-raduis-m);
+    transition: .3s ease;
+}
+.nav-link:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+.nav-item{
+    list-style: none;
+}
+a{
+    color: var(--light-pink-color);
+    text-decoration: none;
+}
